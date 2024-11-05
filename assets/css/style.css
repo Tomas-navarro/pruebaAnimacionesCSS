@@ -28,7 +28,6 @@ header nav ul {
 
 main {
     grid-area: main;
-    padding: 1rem;
 }
 
 footer {
@@ -47,6 +46,7 @@ footer {
     "header"
     "main"
     "footer";
+    grid-template-rows: auto auto auto;
 }
 .Pilotos{
     display: flex;
@@ -72,13 +72,13 @@ footer {
 .informacionPiloto {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Alinea verticalmente al centro */
-    padding: 0 10px; /* Espacio extra para los lados */
+    align-items: center; 
+    padding: 0 10px; 
 }
 
 .informacionPiloto .nombrePiloto{
-    flex-grow: 1; /* Permite que el nombre ocupe todo el espacio disponible */
-    text-align: left; /* Alinea el nombre a la izquierda */
+    flex-grow: 1; 
+    text-align: left; 
 }
 
 .informacionPiloto > img {
@@ -89,107 +89,42 @@ footer {
 }
 
 /* SECTION CARRERAS */
-.cardRace {
-    background-color: #14151d;
-    color: #fff;
-    width: 320px;
-    border-radius: 10px;
-    padding: 20px;
-    margin: auto;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.round-info {
+.Carreras{
+    width: 100%;
     display: flex;
     flex-direction: column;
-}
-
-.round {
-    font-size: 12px;
-    color: #ff4c4c;
-    text-transform: uppercase;
-}
-
-.date {
-    display: flex;
+    justify-content: center;
     align-items: center;
-    margin-top: 5px;
+    padding: 20px;
+    gap: 10px;
+    background-color: #15151d;
+    color: #FFF;
 }
-
-.date-number {
-    font-size: 20px;
-    font-weight: bold;
+.cardRace{
+    border: solid 1px #FFF;
+    min-width: 30%;
+    padding: 20px;
+    text-align: center;
+    gap: 10px;
 }
-
-.month {
-    background-color: #fff;
-    color: #000;
-    padding: 2px 5px;
-    border-radius: 3px;
-    font-size: 12px;
-    margin-left: 5px;
+.cardRace > img {
+    width: 200px; 
+    height: 112px;
 }
-
-.flag {
-    width: 30px;
-    height: auto;
-    border-radius: 3px;
-}
-
-.location h2 {
-    font-size: 18px;
-    color: #ff4c4c;
-}
-
-.location p {
-    font-size: 10px;
-    color: #aaa;
-}
-
-.track-image img {
-    width: 100%;
-    height: auto;
+.fecha{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    color: black;
+    padding: 0px 15px 0px 15px;
     border-radius: 10px;
-    margin: 10px 0;
 }
-
-.schedule {
-    background-color: #37393f;
-    padding: 10px;
-    border-radius: 8px;
-    margin-top: 10px;
-}
-
-.event {
+.encabezado{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding: 5px 0;
+    padding: 10px;
 }
-
-.title {
-    flex: 2;
-    font-size: 12px;
-}
-
-.day, .time {
-    background-color: #68676d;
-    padding: 3px 8px;
-    border-radius: 4px;
-    font-size: 12px;
-    text-align: center;
-    color: #fff;
-}
-
-.note {
-    text-align: center;
-    font-size: 10px;
-    color: #aaa;
-    margin-top: 10px;
+.bandera > img{
+    width:20px;
 }
