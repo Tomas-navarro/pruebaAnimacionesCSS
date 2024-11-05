@@ -1,7 +1,49 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.kanit-thin {
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.kanit-extralight {
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.kanit-light {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.kanit-regular {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kanit-medium {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.kanit-bold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none; 
+    border: none; 
+    outline: none; 
 }
 
 li {
@@ -15,81 +57,117 @@ header {
     display: flex;
     padding: 10px 10px;
 }
+
 header nav {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 header nav ul {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     gap: 10px;
 }
 
 main {
     grid-area: main;
+    font-family: 'formula1-display-bold', sans-serif;
 }
 
 footer {
     grid-area: footer;
-    background-color: #002e6c;
+    background-color: #15151d;
     color: #FFF;
     display: flex;
     text-align: center;
     align-items: center;
     flex-direction: column;
+    padding: 0px 0px 40px 0px;
 }
-.grid-container{
+
+.grid-container {
     display: grid;
     min-height: 100vh;
     grid-template-areas:
-    "header"
-    "main"
-    "footer";
+        "header"
+        "main"
+        "footer";
     grid-template-rows: auto auto auto;
 }
-.Pilotos{
+
+/* PILOTOS */
+.titulo{
+    margin-top: 20px;
+    font-size: 60px;
+    text-align: center;
+    color: #FFF;
+    background-color: #000;
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px;
+}
+.titulo1{
+    font-size: 60px;
+    text-align: center;
+    color: #FFF;
+    padding: 5px 5px 5px 5px;
+}
+.Pilotos {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
-.cardPilotos{
+.posicionPiloto, .puntoPiloto{
+    font-size: 40px;
+    padding-left: 10px;
+}
+.nombrePiloto{
+    font-size: 30px;
+}
+.equipoPiloto{
+    font-size: 20px;
+    color: #76787c;
+}
+.cardPilotos {
     width: 30%;
     min-width: 300px;
     min-height: 320px;
     border: solid 1px black;
     text-align: center;
 }
-.cardPilotos > img {
+
+.cardPilotos>img {
     width: 100%;
 }
-.cardPilotos > .puntos{
+
+.cardPilotos>.puntos {
     display: flex;
     justify-content: space-between;
 }
+
 .informacionPiloto {
     display: flex;
     justify-content: space-between;
-    align-items: center; 
-    padding: 0 10px; 
+    align-items: center;
+    padding: 0 10px;
 }
 
-.informacionPiloto .nombrePiloto{
-    flex-grow: 1; 
-    text-align: left; 
+.informacionPiloto .nombrePiloto {
+    flex-grow: 1;
+    text-align: left;
 }
 
-.informacionPiloto > img {
+.informacionPiloto>img {
     width: auto;
-    height: 1.3em; 
-    margin-left: 10px; 
-    border: solid 1px #7c7c7d ;
+    height: 1.3em;
+    margin-left: 10px;
+    border: solid 1px #7c7c7d;
 }
 
 /* SECTION CARRERAS */
-.Carreras{
+.Carreras {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -100,18 +178,21 @@ footer {
     background-color: #15151d;
     color: #FFF;
 }
-.cardRace{
+
+.cardRace {
     border: solid 1px #FFF;
     min-width: 30%;
     padding: 20px;
     text-align: center;
     gap: 10px;
 }
-.cardRace > img {
-    width: 200px; 
+
+.cardRace>img {
+    width: 200px;
     height: 112px;
 }
-.fecha{
+
+.fecha {
     display: flex;
     flex-direction: column;
     background-color: #FFF;
@@ -119,12 +200,63 @@ footer {
     padding: 0px 15px 0px 15px;
     border-radius: 10px;
 }
-.encabezado{
+
+.encabezado {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 10px;
 }
-.bandera > img{
-    width:20px;
+
+.bandera>img {
+    width: 20px;
+}
+
+/* Equipos */
+.equipos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cardTeam {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    color: #000;
+}
+
+.headerTeams {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.headerTeams>img {
+    width: 10%;
+}
+
+.pilotosTeam {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (min-width: 576px) {
+    .grid-container {
+        grid-template-areas:
+            "header main"
+            "header main"
+            "footer footer";
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 15% 1fr;
+    }
 }
