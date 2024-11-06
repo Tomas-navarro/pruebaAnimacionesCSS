@@ -13,21 +13,22 @@
 
 <body>
     <div class="grid-container">
-        <header class="kanit-medium">
+        <header class="navTitulo kanit-medium">
             <img src="assets/img/f1_logo.png" alt="">
             <nav>
                 <ul>
-                    <li>Pilotos</li>
-                    <li>Carreras</li>
-                    <li>Equipos</li>
-                    <li>Redes sociales</li>
+                    <li><a href="#Pilotos">PILOTOS</a></li>
+                    <li><a href="#Carreras">CARRERAS</a></li>
+                    <li><a href="#Equipos">EQUIPOS</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <section class="Pilotos kanit-regular" id="#Pilotos">
-                <h2 class="kanit-bold titulo">PILOTOS</h2>
-                <div class="cardPilotos">
+            <div class="containerTitulo">
+                <h2 class="titulo kanit-bold">PILOTOS</h2>
+            </div>
+            <section id="Pilotos" class="Pilotos kanit-regular">
+                <div id="redbull" class="cardPilotos">
                     <div class="puntos">
                         <h2 class="posicionPiloto">1</h2>
                         <p class="puntoPiloto">393 pts </p>
@@ -42,7 +43,7 @@
                     <img src="./assets/img/pilotos/maxver01.avif" alt="">
                 </div>
 
-                <div class="cardPilotos">
+                <div id="mclaren" class="cardPilotos">
                     <div class="puntos">
                         <h2 class="posicionPiloto">2</h2>
                         <p class="puntoPiloto">331 pts </p>
@@ -57,7 +58,7 @@
                     <img src="./assets/img/pilotos/lannor01.avif" alt="">
                 </div>
 
-                <div class="cardPilotos">
+                <div id="ferrari" class="cardPilotos">
                     <div class="puntos">
                         <h2 class="posicionPiloto">3</h2>
                         <p class="puntoPiloto">307 pts </p>
@@ -71,7 +72,7 @@
                     <p class="equipoPiloto kanit-regular">Ferrari</p>
                     <img src="./assets/img/pilotos/chalec01.avif" alt="">
                 </div>
-                <div class="cardPilotos">
+                <div id="mclaren" class="cardPilotos">
                     <div class="puntos">
                         <h2 class="posicionPiloto">4</h2>
                         <p class="puntoPiloto">262 pts </p>
@@ -80,7 +81,7 @@
                         <p class="nombrePiloto">Oscar Piastri</p>
                         <img alt="Australia"
                             src="https://media.formula1.com/d_default_fallback_image.png/content/dam/fom-website/flags/Australia.jpg"
-                            class="f1-c-image h-[2em] ml-auto mr-0 border border-greyDark rounded-xxs">
+                           >
                         <hr>
                     </div>
 
@@ -88,26 +89,26 @@
                     <img src="./assets/img/pilotos/oscpia01.avif" alt="">
                 </div>
 
-                <div class="cardPilotos">
+                <div id="ferrari" class="cardPilotos">
                     <div class="puntos">
                         <h2 class="posicionPiloto">5</h2>
-                        <h2 class="puntoPiloto">244 pts </h2>
+                        <p class="puntoPiloto">244 pts </p>
                     </div>
                     <div class="informacionPiloto">
                         <p class="nombrePiloto">Carlos Sainz</p>
                         <img alt="Spain"
                             src="https://media.formula1.com/d_default_fallback_image.png/content/dam/fom-website/flags/Spain.jpg"
-                            class="f1-c-image h-[2em] ml-auto mr-0 border border-greyDark rounded-xxs">
+                           >
                         <hr>
                     </div>
 
                     <p class="equipoPiloto kanit-regular">Red Bull Racing</p>
                     <img src="./assets/img/pilotos/carsai01.avif" alt="">
                 </div>
-                <div class="cardPilotos">
+                <div id="mercedes" class="cardPilotos">
                     <div class="puntos">
                         <h2 class="posicionPiloto">6</h2>
-                        <h2 class="puntoPiloto">192 pts </h2>
+                        <p class="puntoPiloto">192 pts</p>
                     </div>
                     <hr>
                     <div class="informacionPiloto linea-celeste">
@@ -120,64 +121,297 @@
                     <p class="equipoPiloto kanit-regular">Mercedes</p>
                     <img src="./assets/img/pilotos/georus01.avif" alt="">
                 </div>
+                <div id="mercedes" class="cardPilotos">
+                    <div class="puntos">
+                        <h2 class="posicionPiloto">7</h2>
+                        <p class="puntoPiloto">190 pts</p>
+                    </div>
+                    <hr>
+                    <div class="informacionPiloto linea-celeste">
+                        <p class="nombrePiloto">Lewis Hamilton</p>
+                        <img alt="United Kingdom"
+                            src="https://media.formula1.com/d_default_fallback_image.png/content/dam/fom-website/flags/United%20Kingdom.jpg">
+                        <hr>
+                    </div>
+
+                    <p class="equipoPiloto kanit-regular">Mercedes</p>
+                    <img src="./assets/img/pilotos/lewham01.avif" alt="">
+                </div>
+                <div id="redbull" class="cardPilotos">
+                    <div class="puntos">
+                        <h2 class="posicionPiloto">8</h2>
+                        <p class="puntoPiloto">151 pts</p>
+                    </div>
+                    <hr>
+                    <div class="informacionPiloto linea-celeste">
+                        <p class="nombrePiloto">Sergio Perez</p>
+                        <img alt="United Kingdom"
+                            src="https://media.formula1.com/d_default_fallback_image.png/content/dam/fom-website/flags/United%20Kingdom.jpg">
+                        <hr>
+                    </div>
+
+                    <p class="equipoPiloto kanit-regular">Red Bull Racing</p>
+                    <img src="./assets/img/pilotos/serper01.avif" alt="">
+                </div>
+                <div id="aston-martin" class="cardPilotos">
+                    <div class="puntos">
+                        <h2 class="posicionPiloto">9</h2>
+                        <p class="puntoPiloto">62 pts</p>
+                    </div>
+                    <hr>
+                    <div class="informacionPiloto linea-celeste">
+                        <p class="nombrePiloto">Fernando Alonso</p>
+                        <img alt="United Kingdom"
+                            src="https://media.formula1.com/d_default_fallback_image.png/content/dam/fom-website/flags/United%20Kingdom.jpg">
+                        <hr>
+                    </div>
+
+                    <p class="equipoPiloto kanit-regular">Aston Martin</p>
+                    <img src="./assets/img/pilotos/feralo01.avif" alt="">
+                </div>
+                <div id="haas" class="cardPilotos">
+                    <div class="puntos">
+                        <h2 class="posicionPiloto">10</h2>
+                        <p class="puntoPiloto">31 pts </p>
+                    </div>
+                    <hr>
+                    <div class="informacionPiloto linea-celeste">
+                        <p class="nombrePiloto">Nico Hulkenberg</p>
+                        <img alt="Germany" src="https://media.formula1.com/d_default_fallback_image.png/content/dam/fom-website/flags/Germany.jpg">
+                        <hr>
+                    </div>
+
+                    <p class="equipoPiloto kanit-regular">Haas</p>
+                    <img src="./assets/img/pilotos/nichul01.avif" alt="">
+                </div>
+                <div id="rb" class="cardPilotos">
+                    <div class="puntos">
+                        <h2 class="posicionPiloto">11</h2>
+                        <p class="puntoPiloto">28 pts </p>
+                    </div>
+                    <hr>
+                    <div class="informacionPiloto linea-celeste">
+                        <p class="nombrePiloto">Yuki Tsunoda</p>
+                        <img alt="Japan" src="https://media.formula1.com/d_default_fallback_image.png/content/dam/fom-website/flags/Japan.jpg">
+                        <hr>
+                    </div>
+
+                    <p class="equipoPiloto kanit-regular">RB</p>
+                    <img src="./assets/img/pilotos/yuktsu01.avif" alt="">
+                </div>
+                <div id="alpine" class="cardPilotos">
+                    <div class="puntos">
+                        <h2 class="posicionPiloto">12</h2>
+                        <p class="puntoPiloto">26 pts </p>
+                    </div>
+                    <hr>
+                    <div class="informacionPiloto linea-celeste">
+                        <p class="nombrePiloto">Pierre Gasly</p>
+                        <img alt="France" src="https://media.formula1.com/d_default_fallback_image.png/content/dam/fom-website/flags/France.jpg">
+                        <hr>
+                    </div>
+
+                    <p class="equipoPiloto kanit-regular">Alpine</p>
+                    <img src="./assets/img/pilotos/piegas01.avif" alt="">
+                </div>
+                <div id="aston-martin" class="cardPilotos">
+                    <div class="puntos">
+                        <h2 class="posicionPiloto">13</h2>
+                        <p class="puntoPiloto">24 pts </p>
+                    </div>
+                    <hr>
+                    <div class="informacionPiloto linea-celeste">
+                        <p class="nombrePiloto">Lance Stroll</p>
+                        <img alt="Canada" src="https://media.formula1.com/d_default_fallback_image.png/content/dam/fom-website/flags/Canada.jpg">
+                        <hr>
+                    </div>
+
+                    <p class="equipoPiloto kanit-regular">Aston Martin</p>
+                    <img src="./assets/img/pilotos/lanstr01.avif" alt="">
+                </div>
+                <div id="alpine" class="cardPilotos">
+                    <div class="puntos">
+                        <h2 class="posicionPiloto">14</h2>
+                        <p class="puntoPiloto">23 pts </p>
+                    </div>
+                    <hr>
+                    <div class="informacionPiloto linea-celeste">
+                        <p class="nombrePiloto">Esteban Ocon</p>
+                        <img alt="France" src="https://media.formula1.com/d_default_fallback_image.png/content/dam/fom-website/flags/France.jpg">
+                        <hr>
+                    </div>
+
+                    <p class="equipoPiloto kanit-regular">Alpine</p>
+                    <img src="./assets/img/pilotos/estoco01.avif" alt="">
+                </div>
+                <div id="haas" class="cardPilotos">
+                    <div class="puntos">
+                        <h2 class="posicionPiloto">15</h2>
+                        <p class="puntoPiloto">14 pts </p>
+                    </div>
+                    <hr>
+                    <div class="informacionPiloto linea-celeste">
+                        <p class="nombrePiloto">Kevin Magnussen</p>
+                        <img alt="Denmark" src="https://media.formula1.com/d_default_fallback_image.png/content/dam/fom-website/flags/Denmark.jpg">
+                        <hr>
+                    </div>
+
+                    <p class="equipoPiloto kanit-regular">Haas</p>
+                    <img src="./assets/img/pilotos/kevmag01.avif" alt="">
+                </div>
+                <div id="williams" class="cardPilotos">
+                    <div class="puntos">
+                        <h2 class="posicionPiloto">16</h2>
+                        <p class="puntoPiloto">12 pts </p>
+                    </div>
+                    <hr>
+                    <div class="informacionPiloto linea-celeste">
+                        <p class="nombrePiloto">Alexander Albon</p>
+                        <img alt="Thailand" src="https://media.formula1.com/d_default_fallback_image.png/content/dam/fom-website/flags/Thailand.jpg">
+                        <hr>
+                    </div>
+
+                    <p class="equipoPiloto kanit-regular">Williams</p>
+                    <img src="./assets/img/pilotos/alealb01.avif" alt="">
+                </div>
+                <div id="williams" class="cardPilotos">
+                    <div class="puntos">
+                        <h2 class="posicionPiloto">17</h2>
+                        <p class="puntoPiloto">5 pts </p>
+                    </div>
+                    <hr>
+                    <div class="informacionPiloto linea-celeste">
+                        <p class="nombrePiloto">Franco Colapinto</p>
+                        <img alt="Argentina" src="https://media.formula1.com/d_default_fallback_image.png/content/dam/fom-website/flags/Argentina.jpg">
+                        <hr>
+                    </div>
+
+                    <p class="equipoPiloto kanit-regular">Williams</p>
+                    <img src="./assets/img/pilotos/fracol01.avif" alt="">
+                </div>
+                <div id="rb" class="cardPilotos">
+                    <div class="puntos">
+                        <h2 class="posicionPiloto">18</h2>
+                        <p class="puntoPiloto">4 pts </p>
+                    </div>
+                    <hr>
+                    <div class="informacionPiloto linea-celeste">
+                        <p class="nombrePiloto">Liam Lawson</p>
+                        <img alt="New Zealand" src="https://media.formula1.com/d_default_fallback_image.png/content/dam/fom-website/flags/New%20Zealand.jpg">
+                        <hr>
+                    </div>
+
+                    <p class="equipoPiloto kanit-regular">RB</p>
+                    <img src="./assets/img/pilotos/lialaw01.avif" alt="">
+                </div>
+                <div id="kick-sauber" class="cardPilotos">
+                    <div class="puntos">
+                        <h2 class="posicionPiloto">19</h2>
+                        <p class="puntoPiloto">0 pts </p>
+                    </div>
+                    <hr>
+                    <div class="informacionPiloto linea-celeste">
+                        <p class="nombrePiloto">Valtteri Bottas</p>
+                        <img alt="Finland" src="https://media.formula1.com/d_default_fallback_image.png/content/dam/fom-website/flags/Finland.jpg">
+                        <hr>
+                    </div>
+
+                    <p class="equipoPiloto kanit-regular">Kick Sauber</p>
+                    <img src="./assets/img/pilotos/valbot01.avif" alt="">
+                </div>
+                <div id="kick-sauber" class="cardPilotos">
+                    <div class="puntos">
+                        <h2 class="posicionPiloto">20</h2>
+                        <p class="puntoPiloto">0 pts </p>
+                    </div>
+                    <hr>
+                    <div class="informacionPiloto linea-celeste">
+                        <p class="nombrePiloto">Zhou Guanyu</p>
+                        <img alt="China" src="https://media.formula1.com/d_default_fallback_image.png/content/dam/fom-website/flags/China.jpg">
+                        <hr>
+                    </div>
+
+                    <p class="equipoPiloto kanit-regular">Kick Sauber</p>
+                    <img src="./assets/img/pilotos/guazho01.avif" alt="">
+                </div>
             </section>
-            <section class="Carreras kanit-regular">
-                <h2 class="kanit-bold titulo1">Grand Prix</h2>
-                <div class="cardRace">
-                    <div class="encabezado">
-                        <div class="fecha">
-                            <h2>21-23</h2>
-                            <h3>NOV</h3>
+            <section id="Carreras" class="Carreras kanit-regular">
+                <h2 class="kanit-bold titulo1">GRAND PRIX</h2>
+                <div class="containerCarreras">
+                    <div class="cardRace">
+                        <div class="encabezado">
+                            <div class="fecha">
+                                <h2>19-21</h2>
+                                <h3>MAY</h3>
+                            </div>
+                            <div class="bandera ">
+                                <img alt="Emilia-Romagna" src="https://media.formula1.com/content/dam/fom-website/2018-redesign-assets/Flags%2016x9/italy-flag.png">
+                            </div>
                         </div>
-                        <div class="bandera">
-                            <img src="https://media.formula1.com/content/dam/fom-website/2018-redesign-assets/Flags%2016x9/united-states-flag.png"
-                                alt="Las Vegas">
-                        </div>
+                        <hr>
+                        <h4>ABU DHABI</h4>
+                        <p>FORMULA 1 QATAR AIRWAYS GRAN PREMIO DEL MADE IN ITALY E DELL'EMILIA-ROMAGNA</p>
+                        <hr>
+                        <img src="assets/img/Grand Prix/Emilia-Romagna carbon.avif" alt="">
                     </div>
-                    <hr>
-                    <h4>LAS VEGAS</h4>
-                    <p>FORMULA 1 HEINEKEN SILVER LAS VEGAS GRAND PRIX 2024</p>
-                    <hr>
-                    <img src="assets/img/Grand Prix/Las Vegas.avif" alt="">
-                </div>
-                <div class="cardRace">
-                    <div class="encabezado">
-                        <div class="fecha">
-                            <h2>29-01</h2>
-                            <h3>NOV-DIC</h3>
+                    <div class="cardRace">
+                        <div class="encabezado">
+                            <div class="fecha">
+                                <h2>21-23</h2>
+                                <h3>NOV</h3>
+                            </div>
+                            <div class="bandera">
+                                <img src="https://media.formula1.com/content/dam/fom-website/2018-redesign-assets/Flags%2016x9/united-states-flag.png"
+                                    alt="Las Vegas">
+                            </div>
                         </div>
-                        <div class="bandera">
-                            <img alt="Qatar"
-                                src="https://media.formula1.com/content/dam/fom-website/2018-redesign-assets/Flags%2016x9/qatar-flag.png">
-                        </div>
+                        <hr>
+                        <h4>LAS VEGAS</h4>
+                        <p>FORMULA 1 HEINEKEN SILVER LAS VEGAS GRAND PRIX 2024</p>
+                        <hr>
+                        <img src="assets/img/Grand Prix/Las Vegas.avif" alt="">
                     </div>
-                    <hr>
-                    <h4>QATAR</h4>
-                    <p>FORMULA 1 QATAR AIRWAYS QATAR GRAND PRIX 2024</p>
-                    <hr>
-                    <img src="assets/img/Grand Prix/Qatar carbon.avif" alt="">
-                </div>
-                <div class="cardRace">
-                    <div class="encabezado">
-                        <div class="fecha">
-                            <h2>06-08</h2>
-                            <h3>DIC</h3>
+                    <div class="cardRace">
+                        <div class="encabezado">
+                            <div class="fecha">
+                                <h2>29-01</h2>
+                                <h3>NOV-DIC</h3>
+                            </div>
+                            <div class="bandera">
+                                <img alt="Qatar"
+                                    src="https://media.formula1.com/content/dam/fom-website/2018-redesign-assets/Flags%2016x9/qatar-flag.png">
+                            </div>
                         </div>
-                        <div class="bandera">
-                            <img alt="Abu Dhabi"
-                                src="https://media.formula1.com/content/dam/fom-website/2018-redesign-assets/Flags%2016x9/united-arab-emirates-flag.png">
-                        </div>
+                        <hr>
+                        <h4>QATAR</h4>
+                        <p>FORMULA 1 QATAR AIRWAYS QATAR GRAND PRIX 2024</p>
+                        <hr>
+                        <img src="assets/img/Grand Prix/Qatar carbon.avif" alt="">
                     </div>
-                    <hr>
-                    <h4>ABU DHABI</h4>
-                    <p>FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2024</p>
-                    <hr>
-                    <img src="assets/img/Grand Prix/Abu Dhabi carbon.avif" alt="">
+                    <div class="cardRace">
+                        <div class="encabezado">
+                            <div class="fecha">
+                                <h2>06-08</h2>
+                                <h3>DIC</h3>
+                            </div>
+                            <div class="bandera">
+                                <img alt="Abu Dhabi"
+                                    src="https://media.formula1.com/content/dam/fom-website/2018-redesign-assets/Flags%2016x9/united-arab-emirates-flag.png">
+                            </div>
+                        </div>
+                        <hr>
+                        <h4>ABU DHABI</h4>
+                        <p>FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2024</p>
+                        <hr>
+                        <img src="assets/img/Grand Prix/Abu Dhabi carbon.avif" alt="">
+                    </div>
                 </div>
 
             </section>
-            <section class="equipos kanit-regular">
-                <h2 class="kanit-bold titulo">Equipos</h2>
+            <div class="containerTitulo">
+                <h2 class="kanit-bold titulo">EQUIPOS</h2>
+            </div>
+            <section id="Equipos" class="equipos kanit-regular">
                 <div class="cardTeam">
                     <div class="headerTeams">
                         <h2>McLaren</h2>
@@ -226,6 +460,78 @@
                     </div>
                     <img src="./assets/img/Teams/mercedes.avif" alt="">
                 </div>
+                <div class="cardTeam">
+                    <div class="headerTeams">
+                        <h2>Aston Martin</h2>
+                        <img src="./assets/img/Teams/aston-martin-logo.avif" alt="">
+                    </div>
+
+                    <div class="pilotosTeam">
+                        <p>Fernando Alonso</p>
+                        <p>Lance Stroll</p>
+                    </div>
+                    <img src="./assets/img/Teams/aston-martin.avif" alt="">
+                </div>
+                <div class="cardTeam">
+                    <div class="headerTeams">
+                        <h2>Alpine</h2>
+                        <img src="./assets/img/Teams/alpine-logo.avif" alt="">
+                    </div>
+
+                    <div class="pilotosTeam">
+                        <p>Pierre Gasly</p>
+                        <p>Estaban Ocon</p>
+                    </div>
+                    <img src="./assets/img/Teams/alpine.avif" alt="">
+                </div>
+                <div class="cardTeam">
+                    <div class="headerTeams">
+                        <h2>Haas</h2>
+                        <img src="./assets/img/Teams/haas-logo.avif" alt="">
+                    </div>
+
+                    <div class="pilotosTeam">
+                        <p>Fernando Alonso</p>
+                        <p>Lance Stroll</p>
+                    </div>
+                    <img src="./assets/img/Teams/haas.avif" alt="">
+                </div>
+                <div class="cardTeam">
+                    <div class="headerTeams">
+                        <h2>RB</h2>
+                        <img src="./assets/img/Teams/rb-logo.avif" alt="">
+                    </div>
+
+                    <div class="pilotosTeam">
+                        <p>Yuki Tsunoda</p>
+                        <p>Liam Lawson</p>
+                    </div>
+                    <img src="./assets/img/Teams/rb.avif" alt="">
+                </div>
+                <div class="cardTeam">
+                    <div class="headerTeams">
+                        <h2>Williams</h2>
+                        <img src="./assets/img/Teams/williams-logo.avif" alt="">
+                    </div>
+
+                    <div class="pilotosTeam">
+                        <p>Alexander Albon</p>
+                        <p>Franco Colapinto</p>
+                    </div>
+                    <img src="./assets/img/Teams/williams.avif" alt="">
+                </div>
+                <div class="cardTeam">
+                    <div class="headerTeams">
+                        <h2>Kick Sauber</h2>
+                        <img src="./assets/img/Teams/kick-sauber-logo.avif" alt="">
+                    </div>
+
+                    <div class="pilotosTeam">
+                        <p>Valtteri Bottas</p>
+                        <p>Zhou Guanyu</p>
+                    </div>
+                    <img src="./assets/img/Teams/kick-sauber.avif" alt="">
+                </div>
             </section>
         </main>
         <footer>
@@ -251,6 +557,7 @@
                     <img src="./assets/img/footer/qatar.png" alt="Qatar Airways">
                 </a>
             </div>
+            <p>© 2003-2024 Formula One World Championship Limited</p>
         </footer>
     </div>
 </body>
