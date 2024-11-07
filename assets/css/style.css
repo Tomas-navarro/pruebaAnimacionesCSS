@@ -141,7 +141,7 @@ footer > p {
 }
 
 .navTitulo{
-    font-size: 30px;
+    font-size: 10px;
 }
 
 .Pilotos {
@@ -396,6 +396,9 @@ footer > p {
         justify-content: center;
         align-items: center;
         gap: 10px;
+    }
+    .navTitulo{
+        font-size: 30px;
     }
 
     .equipos {
